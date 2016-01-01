@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.appslure.ocwdelivery.DropoffDetail">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/toolbar_bg"
+        app:theme="@style/Toolbar_Theme"
+        android:layout_gravity="center"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drop-off Detail"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        >
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:background="@color/gray_color"
+            >
+
+            <TextView
+                android:id="@+id/drop_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking ID"
+                android:padding="5dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/drop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:padding="5dp"
+                />
+            <TextView
+                android:id="@+id/drop_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile"
+                android:padding="5dp"
+                android:textColorLink="@color/sky"
+                android:linksClickable="true"
+                android:autoLink="all"
+                android:drawableLeft="@drawable/ic_call"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                />
+
+            <TextView
+                android:id="@+id/drop_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:id="@+id/drop_previous_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount to be Collect:"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/darkBlue"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:background="@color/sky"
+            >
+            <TextView
+                android:id="@+id/drop_hub_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ware House Name"
+                android:padding="5dp"
+                android:textColor="@color/white"
+
+                />
+            <TextView
+                android:id="@+id/drop_hub_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ware House Address"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_drop_dryclean"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:weightSum="2"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.3"
+                    android:layout_height="wrap_content"
+                    android:text="Number of Dry Clean Clothes:"
+                    />
+
+                <TextView
+                    android:id="@+id/drop_dry_clean"
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:background="@color/white"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:weightSum="2"
+                >
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1.3"
+                    android:layout_height="wrap_content"
+                    android:text="Number of Paid Clothes:"
+                    />
+
+                <TextView
+                    android:id="@+id/drop_paid_cloth"
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:background="@color/white"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:weightSum="2"
+                >
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1.3"
+                    android:layout_height="wrap_content"
+                    android:text="Number of Free Clothes:"
+                    />
+
+                <TextView
+                    android:id="@+id/drop_free_cloth"
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:background="@color/white"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:weightSum="2"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.3"
+                    android:layout_height="wrap_content"
+                    android:text="Token Number:"
+                    />
+
+                <TextView
+                    android:id="@+id/drop_token"
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:background="@color/white"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:weightSum="2"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.3"
+                    android:layout_height="wrap_content"
+                    android:text="Amount Collected"
+                    />
+
+                <EditText
+                    android:id="@+id/drop_amount"
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:background="@color/gray_color"
+                    android:padding="5dp"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/drop_success"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/customized_button"
+                android:textColor="@color/white"
+                android:text="Drop-off Success"
+                android:textAllCaps="false"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <Button
+                android:id="@+id/drop_failed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/customized_button"
+                android:textColor="@color/white"
+                android:text="Drop-off Failed"
+                android:textAllCaps="false"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

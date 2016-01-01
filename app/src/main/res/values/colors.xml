@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#001947</color>
+    <color name="colorPrimaryDark">#000F2B</color>
+    <color name="colorAccent">#3dc1f0</color>
+
+    <color name="darkBlue">#001947</color>
+    <color name="lightBlue">#3dc1f0</color>
+    <color name="sky">#3dc1f0</color>
+    <color name="white">#fff</color>
+    <color name="button_default">#3dc1f0</color>
+    <color name="button_pressed">#97D1E6</color>
+
+    <color name="black">#000</color>
+    <color name="textColor">#000</color>
+
+    <color name="toolbar_bg">#001947</color>
+
+    <color name="gray_color">#eeeded</color>
+    <color name="dark_gray_color">#9C9C9C</color>
+</resources>

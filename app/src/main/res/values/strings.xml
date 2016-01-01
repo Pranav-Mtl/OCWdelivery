@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">OCW Driver</string>
+
+    <string name="_pickup_fail">Are you sure pickup is failed?</string>
+    <string name="_drop_fail">Are you sure drop-off is failed?</string>
+    <string name="_pickup_save">Done</string>
+    <string name="_pickup_cancel">Cancel</string>
+    <string name="_pickup_yes">YES</string>
+    <string name="_pickup_no">NO</string>
+</resources>
